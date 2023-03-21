@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const RegisterUser = require('../../../Domains/users/entities/RegisterUser');
 const RegisteredUser = require('../../../Domains/users/entities/RegisteredUser');
 const UserRepository = require('../../../Domains/users/UserRepository');
@@ -6,6 +5,9 @@ const PasswordHash = require('../../security/PasswordHash');
 const AddUserUseCase = require('../AddUserUseCase');
 
 describe('AddUserUseCase', () => {
+  /**
+   * Menguji apakah use case mampu mengoskestrasikan langkah demi langkah dengan benar.
+   */
   it('should orchestrating the add user action correctly', async () => {
     // Arrange
     const useCasePayload = {

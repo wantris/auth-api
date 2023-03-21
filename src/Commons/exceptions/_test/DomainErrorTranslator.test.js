@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const DomainErrorTranslator = require('../DomainErrorTranslator');
 const InvariantError = require('../InvariantError');
 

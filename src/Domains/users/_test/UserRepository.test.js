@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const UserRepository = require('../UserRepository');
 
 describe('UserRepository interface', () => {
@@ -9,5 +8,6 @@ describe('UserRepository interface', () => {
     // Action and Assert
     await expect(userRepository.addUser({})).rejects.toThrowError('USER_REPOSITORY.METHOD_NOT_IMPLEMENTED');
     await expect(userRepository.verifyAvailableUsername('')).rejects.toThrowError('USER_REPOSITORY.METHOD_NOT_IMPLEMENTED');
+    await expect(userRepository.getPasswordByUsername('')).rejects.toThrowError('USER_REPOSITORY.METHOD_NOT_IMPLEMENTED');
   });
 });

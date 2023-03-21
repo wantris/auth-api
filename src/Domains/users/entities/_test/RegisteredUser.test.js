@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const RegisteredUser = require('../RegisteredUser');
 
 describe('a RegisteredUser entities', () => {
@@ -18,7 +17,7 @@ describe('a RegisteredUser entities', () => {
     const payload = {
       id: 123,
       username: 'dicoding',
-      fullname: 'Dicoding Indonesia',
+      fullname: {},
     };
 
     // Action and Assert
